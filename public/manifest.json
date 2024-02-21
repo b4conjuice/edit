@@ -1,0 +1,8 @@
+{
+  "name": "edit",
+  "short_name": "edit",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/"
+}
