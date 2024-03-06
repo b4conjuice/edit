@@ -1,4 +1,4 @@
-import Main from '@/components/main'
+import Main from '@/app/_components/main'
 import type { Content } from '@/utils/fetchContent'
 import fetcher from '@/utils/fetcher'
 import sanitize from '@/utils/sanitize'
