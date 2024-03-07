@@ -1,9 +1,12 @@
+import { unstable_noStore as noStore } from 'next/cache'
+
 import Main from '@/app/_components/main'
 import type { Content } from '@/utils/fetchContent'
 import fetcher from '@/utils/fetcher'
 import sanitize from '@/utils/sanitize'
 
 export default async function Home() {
+  noStore()
   const data: Content = await fetcher(process.env.CONTENT_URL!)
   const content = sanitize(data.markdown)
   return (
